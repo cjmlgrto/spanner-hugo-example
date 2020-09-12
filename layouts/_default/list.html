@@ -5,7 +5,7 @@
 	<section>
 		{{ range (.Paginator 2).Pages }}
 			<article>
-				<h1>{{ .Title }}</h1>
+				<h2>{{ .Title }}</h2>
 				<time>{{ .Date.Format "January 2, 2006" }}</time>
 				<p>{{ .Summary | plainify | safeHTML | truncate 180 }}</p>
 				<p><a href="{{ .Permalink }}">Read More</a></p>
@@ -21,6 +21,5 @@
 			<a href="{{ .Paginator.Prev.URL }}">Newer Posts</a>
 		{{ end }}
 	</nav>
-
 </main>
 {{ end }}

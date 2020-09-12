@@ -1,0 +1,81 @@
+/* Example Styles */
+/* ------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography */
+/* ------------------------------------- */
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.5;
+    color: #333;
+}
+
+h1 {
+    color: black;
+    margin-bottom: 32px;
+}
+
+h2 {
+    margin-bottom: 8px;
+}
+
+time {
+    display: block;
+    margin-bottom: 16px;
+    color: gray;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+a {
+    color: blue;
+}
+
+/* Layout */
+/* ------------------------------------- */
+
+body {
+    max-width: 640px;
+    padding: 32px;
+    margin: 0 auto;
+}
+
+article {
+    margin-bottom: 64px;
+}
+
+main > nav {
+    margin-top: 64px;
+}
+
+/* Partials */
+/* ------------------------------------- */
+
+header {
+    margin-bottom: 64px;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav a {
+    font-weight: bold;
+    margin-right: 16px;
+}
+
+footer {
+    margin-top: 64px;
+}
+
+footer small {
+    color: gray;
+}

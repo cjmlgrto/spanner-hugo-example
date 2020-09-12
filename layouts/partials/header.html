@@ -1,6 +1,7 @@
 <header>
-	<a href="{{ .Site.BaseURL }}">Home</a>
 	<nav>
+		<a href="{{ .Site.BaseURL }}">Home</a>
+
 		{{ range .Site.Sections }}
 			<a href="{{ .Permalink }}">{{ .Title }}</a>
 		{{ end }}
