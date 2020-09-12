@@ -1,0 +1,26 @@
+{{ define "main" }}
+<main id="list">
+	<h1>{{ .Title }}</h1>
+
+	<section>
+		{{ range (.Paginator 2).Pages }}
+			<article>
+				<h1>{{ .Title }}</h1>
+				<time>{{ .Date.Format "January 2, 2006" }}</time>
+				<p>{{ .Summary | plainify | safeHTML | truncate 180 }}</p>
+				<p><a href="{{ .Permalink }}">Read More</a></p>
+			</article>
+		{{ end }}
+	</section>
+
+	<nav>
+		{{ if .Paginator.HasNext }}
+			<a href="{{ .Paginator.Next.URL }}">Older Posts</a>
+		{{ end }}
+		{{ if .Paginator.HasPrev }}
+			<a href="{{ .Paginator.Prev.URL }}">Newer Posts</a>
+		{{ end }}
+	</nav>
+
+</main>
+{{ end }}

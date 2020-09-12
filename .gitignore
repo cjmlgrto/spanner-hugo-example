@@ -1,0 +1,3 @@
+# Ignore the following files in version control:
+.DS_Store
+resources/_gen/*
